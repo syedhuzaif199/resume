@@ -1,0 +1,208 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[hidelinks]{hyperref}
+    \usepackage[left=2cm, right=2cm, top=2cm]{geometry}
+    \usepackage{longtable}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+    \vspace*{-40pt}
+
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Profile
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \vspace*{-2pt}
+  \begin{center}
+    {\Huge \scshape {Syed Mohammad Huzaif}}\\
+    \vspace*{2pt}
+    
+    \vspace*{2pt}
+    \href{mailto:syedhuzaif199@gmail.com}{syedhuzaif199@gmail.com} | \href{tel:+919149728459}{+91 91497 28459} | \href{tel:+917889426710}{+91 78894 26710}\\
+    \vspace*{2pt}
+    \textbf{\href{https://github.com/syedhuzaif199}{github.com/syedhuzaif199}}
+  \end{center}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Education
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Education}
+      \vspace{2mm}
+      \textbf{University of Kashmir}\hfill Jammu and Kashmir, IN\\
+Full-time Bachelor of Technology in Computer Science and Engineering \hfill Nov 2020 - Oct 2024\\
+{\sl GPA: 8.41}\\
+\vspace{2mm}
+      \textbf{Sri Pratap Higher Secondary School}\hfill Jammu and Kashmir, IN\\
+Degree in Senior Secondary \hfill Nov 2017 - Dec 2019\\
+{\sl Percentage: 78.2}\%\\
+\vspace{2mm}
+      \textbf{JK Public School}\hfill Jammu and Kashmir, IN\\
+Degree in Secondary \hfill Completed - Oct 2017\\
+{\sl Percentage: 82.6}\%\\
+\vspace{2mm}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \header{Skills}
+  \vspace{2mm}
+  \begin{longtable}{p{4cm}p{12cm}}
+  Languages: & Python, C, Java, Javascript, HTML, CSS, PHP, Laravel, Shell scripting \\
+  Tools / Platforms: & Git, GitHub, Linux \\
+  Databases: & MySQL, SQLite, MongoDB \\
+  \end{longtable}
+  \vspace{1mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Projects
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Projects / Open-Source}
+      \vspace{2mm}
+      {\textbf{Automata Weaver}}\textbf{ | \href{https://github.com/syedhuzaif199/automata-weaver}{\underline{Link}}}\hfill{\sl JavaScript, HTML, CSS}\\
+          \vspace{-1mm}
+\begin{itemize} \itemsep -3pt
+\item  An open source online graphical simulator for Finite automata, Pushdown automata and Turing machines.
+\item  Minimize DFAs, convert from NFA to DFA, or generate DFA/NFA from regular expressions
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Physics Simulator}}\textbf{ | \href{https://github.com/syedhuzaif199/physics-simulator}{\underline{Link}}}\hfill{\sl Java}\\
+          \vspace{-2mm}
+\begin{itemize} \itemsep -3pt
+\item[] A 2D physics simulator in Java
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Data Compression Tool}}\textbf{ | \href{https://github.com/syedhuzaif199/data-compression-tool}{\underline{Link}}}\hfill{\sl C}\\
+          \vspace{-2mm}
+\begin{itemize} \itemsep -3pt
+\item[] A tool for compressing data files using Huffman coding and Lempel-Ziv-Welch algorithm.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{nn-c}}\textbf{ | \href{https://github.com/syedhuzaif199/nn-c}{\underline{Link}}}\hfill{\sl C}\\
+          \vspace{-2mm}
+\begin{itemize} \itemsep -3pt
+\item[] A small neural networks builder made using C and raylib
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Category Tree Renderer}}\textbf{ | \href{https://github.com/syedhuzaif199/category-tree}{\underline{Link}}}\hfill{\sl Python}\\
+          \vspace{-2mm}
+\begin{itemize} \itemsep -3pt
+\item[] A small program in Python that creates a random category tree and renders it using graphViz
+\end{itemize}
+
+        \vspace*{3mm}
+      {\textbf{Shopper E-commerce Website}}\textbf{ | \href{https://github.com/syedhuzaif199/shopper}{\underline{Link}}}\hfill{\sl PHP, Laravel, SQLite}\\
+          \vspace{-1mm}
+\begin{itemize} \itemsep -3pt
+\item[] A mock e-commerce platform written in PHP using the Laravel framework and SQLite.
+\end{itemize}
+
+          \vspace*{3mm}
+      {\textbf{Snake Game}}\textbf{ | \href{https://github.com/syedhuzaif199/snake-mongo}{\underline{Link}}}\hfill{\sl Java}\\
+          \vspace{-2mm}
+\begin{itemize} \itemsep -3pt
+\item[] The classic snake game in Java with MongoDB connectivity for high-scores.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Minesweeper in python}}\textbf{ | \href{https://github.com/syedhuzaif199/minesweeper-python}{\underline{Link}}}\hfill{\sl Python}\\
+          \vspace{-2mm}
+\begin{itemize} \itemsep -3pt
+\item[] Classic minesweeper game with a dark theme
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Play with Spirographs}}\textbf{ | \href{https://github.com/syedhuzaif199/play-with-spirographs}{\underline{Link}}}\hfill{\sl JavaScript, HTML, CSS}\\
+          \vspace{-1mm}
+\begin{itemize} \itemsep -3pt
+\item[] A simple simulator for animating spirographs written in HTML, CSS and Javascript.
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Conway\textquotesingle{}s Game of Life}}\textbf{ | \href{https://github.com/syedhuzaif199/game-of-life}{\underline{Link}}}\hfill{\sl JavaScript, HTML, CSS}\\
+          \vspace{-2mm}
+\begin{itemize} \itemsep -3pt
+\item[] A web-based simulator for Conway\textquotesingle{}s game of life using HTML, CSS, and Javascript
+\end{itemize}
+          \vspace*{3mm}
+      {\textbf{Image filters visualizer}}\textbf{ | \href{https://github.com/syedhuzaif199/image-filters-visualization}{\underline{Link}}}\hfill{\sl JavaScript, HTML, CSS}\\
+          \vspace{-2mm}
+\begin{itemize} \itemsep -3pt
+\item[] A web app for visualizing how image filters work.
+\end{itemize}
+          \vspace*{3mm}
+
+    \ 
+    \end{document}
